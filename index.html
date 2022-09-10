@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://seeklogo.com/images/N/new-google-favicon-logo-5E38E037AF-seeklogo.com.png">
 </head>
 <body>
-    <nav class="navbar">
+    <header class="header">
         <ul class="left">
             <li>About</li>
             <li>Store</li>
@@ -17,49 +18,88 @@
         <ul class="right">
             <li>Gmail</li>
             <li>Images</li>
-            <li><span class="boxes"></span></li>
-            <li><span class="profile-pic"></span></li>
+            <li>
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/web-starter-kit/0.2.0-beta/images/hamburger.svg" alt="hamburger-ellipsis-img">
+            </li>
+            <li>
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/topcoat-icons/0.2.0/svg/user.svg" alt="user-img">
+            </li>
         </ul>
-    </nav>
+    </header>
 
-    <main class="mid-section">
-        <div>
-            <img src="https://www.google.com/logos/2021/petanque/r0730b/cta.png" alt="google-gif">
+    <main class="container">
+
+        <form action="#" method="GET">
+            <div class="content">
+                
+                <div class="image">
+                    <img src="https://www.google.com/logos/doodles/2022/mid-autumn-festival-2022-multiple-6753651837109496.3-law.gif" alt="google-img">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAoUlEQVR42mNgmMnAQAZ2AGIQfADFM6FiCDVkGnoGiP+j4TMohpNh8EwshsLwTEoMfoDH4AeDzmBnIL5MalDgi2kZIF6JZMAtYiMPV0yfhVrwGcoH0RVA7EJscsMX0zC8GojliA42IiLkExC7khzJJMU0GQbjC4rLlLgYV+TdojSMcSU3UOyXU5IqCGGy0zFNc97wLIRoWh7TrAahWZ1HFAYAVH3HKGfoUS0AAAAASUVORK5CYII=" alt="google-share-img">   
+                </div>
+
+                <div class="search-bar">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/svg/magnifying-glass.svg" alt="magnifying-glass-img" class="magnifying-glass">
+                    <input type="text">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/svg/microphone.svg" alt="microphone-img" class="microphone">
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="submit">
+                        Google Search
+                    </button>
+    
+                    <button class="doodle">
+                        I'm Feeling Lucky
+                    </button>
+                </div>
+
+                <div class="text">
+                    <p>Celebrate 
+                        <a href="https://www.google.com/url?q=https://search.app.goo.gl/%3Flink%3Dhttps://www.google.com/gasearch%3Fq%253DMid%252BAutumn%252BFestival%2526source%253Dsmp.midautumn.37%26afl%3Dhttps://www.google.com/search%3Fq%253DMid%252BAutumn%252BFestival%2526source%253Dsmp.midautumn.37%26apn%3Dcom.google.android.googlequicksearchbox%26amv%3D301174735&source=hpp&id=19031067&ct=3&usg=AOvVaw3yDbvTgIQHB4evTPGUcNBx&sa=X&ved=0ahUKEwjW4fPY0In6AhWZXWwGHRlmDn4Q8IcBCBM">
+                            Mid Autumn Festival 
+                        </a>with Google
+                    </p>    
+                </div>
+
+                <div class="text">
+                    <p>Google offered in: 
+                        <a href="https://www.google.com/setprefs?sig=0_9u4MiTtdtb8Id_4y6plsCHOsl5E%3D&hl=zh-CN&source=homepage&sa=X&ved=0ahUKEwjW4fPY0In6AhWZXWwGHRlmDn4Q2ZgBCBU">
+                            中文(简体)
+                        </a>
+                        
+                        <a href="https://www.google.com/setprefs?sig=0_9u4MiTtdtb8Id_4y6plsCHOsl5E%3D&hl=ms&source=homepage&sa=X&ved=0ahUKEwjW4fPY0In6AhWZXWwGHRlmDn4Q2ZgBCBY">
+                            Bahasa Melayu
+                        </a>
+    
+                        <a href="https://www.google.com/setprefs?sig=0_9u4MiTtdtb8Id_4y6plsCHOsl5E%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjW4fPY0In6AhWZXWwGHRlmDn4Q2ZgBCBc">
+                            தமிழ்
+                        </a>
+    
+                    </p>
+                </div>
         </div>
-
-        <div>
-            <label class="search-icon">icon</label>
-            <input type="text" class="search-box">
-            <label class="mic-icon">mic</label>
-        </div>
-
-        <div>
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-
-            <p>Google offered in: 中文(简体) Bahasa Melayu தமிழ்</p>
-        </div>
-
+        </form>
     </main>
 
-    <footer>
-        <div class="top-row">
-            <span>Singapore</span>
+    <footer class="footer">
+
+        <div class="first">
+            <span id="country">Singapore</span>
         </div>
-        <div class="bot-row">
+
+        <div class="second">
             <ul class="left">
                 <li>Advertising</li>
                 <li>Business</li>
                 <li>How Search works</li>
             </ul>
-
+    
             <ul class="right">
                 <li>Privacy</li>
                 <li>Terms</li>
                 <li>Settings</li>
             </ul>
         </div>
-        
     </footer>
 </body>
 </html>
